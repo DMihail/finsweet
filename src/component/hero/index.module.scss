@@ -1,0 +1,80 @@
+@import "src/scss/colors";
+@import "src/scss/mixins";
+
+.header {
+  &__top {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+    }
+  }
+
+
+  &__logo {
+
+  }
+
+  &__nav {
+    margin-left: auto;
+    border-right: 1px solid #939191;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__item {
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 32px;
+      }
+    }
+
+    &__link {
+      line-height: 28px;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  &__btnBox {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+  }
+
+  &__btn {
+    margin-right: 14px;
+    cursor: pointer;
+    &__description {
+      font-size: 18px;
+      line-height: 32px;
+
+      &__title {
+        font-weight: 500;
+        line-height: 24px;
+        opacity: 0.7;
+      }
+
+
+      &__tel {
+        font-size: 18px;
+        line-height: 32px;
+      }
+
+    }
+  }
+
+}
+
+.container {
+  @include container
+}
