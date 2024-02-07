@@ -2,10 +2,11 @@
 @import "src/scss/mixins";
 
 .header {
+  height: 100vh;
   &__top {
-    margin-top: 20px;
-    margin-bottom: 20px;
-
+    margin-top: 18px;
+    padding-bottom: 16px;
+    margin-bottom: 80px;
     &__inner {
       display: flex;
       justify-content: space-between;
@@ -21,7 +22,7 @@
 
   &__nav {
     margin-left: auto;
-    border-right: 1px solid #939191;
+    border-right: 1px solid $grey;
 
     &__list {
       display: flex;
@@ -48,12 +49,13 @@
   &__btnBox {
     display: flex;
     align-items: center;
-    margin-left: 32px;
+
   }
 
   &__btn {
     margin-right: 14px;
     cursor: pointer;
+    margin-left: 32px;
     &__description {
       font-size: 18px;
       line-height: 32px;
@@ -68,9 +70,127 @@
       &__tel {
         font-size: 18px;
         line-height: 32px;
+        font-weight: 600;
       }
 
     }
+  }
+
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__textContent {
+>*{
+  margin-bottom: 30px;
+}
+
+    :last-child {
+
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 131%;
+    letter-spacing: -0.03em;
+  }
+
+  &__openBlock {
+    display: inline-flex;
+    align-items: center;
+    &:before {
+      content: "";
+      display: block;
+      width: 31px;
+      height: 31px;
+      background: url("../../assets/svg/Clock.svg") no-repeat;
+      margin-right: 12px;
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 16px;
+      color: $grey;
+      line-height: 150%;
+    }
+
+    &__subTitle {
+      font-weight: 600;
+      font-size: 18px;
+      color: $black;
+      line-height: 175%;
+    }
+  }
+
+  &__imageContent {
+    position: relative;
+  }
+
+  &__advertising {
+    box-shadow: 0px 0px 0px 12px rgba(225, 225, 225, 0.43);
+    border-radius: 59px;
+    background: $white;
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1000;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    font-size: 24px;
+    color: $black;
+
+
+    &__time {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      background: $mint;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      margin-right: 13px;
+
+      &_hr {
+       font-size: 16px;
+      }
+
+    }
+
+    &__gradeBox {
+      display: flex;
+      flex-direction: column;
+      margin-right: 15px;
+
+      &_rating {
+        color: $grey;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+
+  }
+
+  &__service {
+    left: -30px;
+    top: 81px;
+    padding: 13px 15px;
+  }
+
+  &__rating {
+    bottom: 70px;
+    right: -30px;
+    width: 326px;
+    padding: 24px 32px;
   }
 
 }
@@ -78,3 +198,34 @@
 .container {
   @include container
 }
+
+
+.button {
+  @include button
+}
+
+.playVideo {
+  background: transparent;
+  color: $black;
+  max-height: 54px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  margin-left: 30px;
+  &:hover {
+    border: $black 1px solid;
+  }
+
+  span {
+    display: inline-flex;
+    &:before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url("../../assets/svg/PlayIcon.svg") no-repeat;
+      margin-right: 12px;
+    }
+  }
+}
+

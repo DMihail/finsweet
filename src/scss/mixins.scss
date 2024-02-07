@@ -1,3 +1,5 @@
+@import "colors";
+
 @mixin container {
   max-width: 1270px;
   padding: 0 15px;
@@ -8,4 +10,14 @@
   min-height: 100svh;
   min-width: 100%;
   overflow: hidden;
+}
+
+
+@mixin button {
+  border-radius: 12px;
+  padding: 16px 40px;
+  background: $orange;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
 }
