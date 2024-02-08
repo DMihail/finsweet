@@ -6,7 +6,6 @@
   &__top {
     margin-top: 18px;
     padding-bottom: 16px;
-    margin-bottom: 80px;
     &__inner {
       display: flex;
       justify-content: space-between;
@@ -80,6 +79,9 @@
   &__body {
     display: flex;
     flex-direction: column;
+    max-height: 632px;
+    margin: 0 auto;
+    padding-bottom: 135px;
   }
 
   &__content {
@@ -133,6 +135,10 @@
 
   &__imageContent {
     position: relative;
+    img {
+      max-width: 605px;
+      max-height: 632px;
+    }
   }
 
   &__advertising {

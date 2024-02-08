@@ -1,0 +1,21 @@
+@import "src/scss/colors";
+
+.wrapper {
+  min-height: 100svh;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+
+.container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h2 {
+  line-height: 76px;
+  font-weight: 800;
+  font-size: 58px;
+  color: $black;
+}

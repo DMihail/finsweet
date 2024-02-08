@@ -1,0 +1,34 @@
+@import "src/scss/colors";
+
+.container {
+  width: 316px;
+  height: 232px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: $white;
+
+  svg path {
+    fill: $black;
+  }
+
+  &__title {
+   line-height: 36px;
+    font-weight: 600;
+    font-size: 24px;
+    color: $black;
+    margin-top: 19px;
+  }
+
+  &:hover {
+    &>* {
+    color: $white;
+  }
+    background: $orange;
+    svg path {
+      fill: $white;
+    }
+  }
+
+}
