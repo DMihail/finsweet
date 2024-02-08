@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import Hero from "./component/hero";
 import WeOffer from "./component/weOffer/iindex";
+import Brands from "./component/brands/iindex";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Hero />
       <main>
         <WeOffer />
+          <Brands />
       </main>
     </div>
   );
