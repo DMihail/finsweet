@@ -1,16 +1,18 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
 import Hero from "./component/hero";
-import WeOffer from "./component/weOffer/iindex";
-import Brands from "./component/brands/iindex";
+import WeOffer from "./component/weOffer";
+import Brands from "./component/brands";
+import FrequentlyQuestions from "./component/frequentlyQuestions";
 
 function App() {
   return (
     <div className="wrapper">
-        <Hero />
+      <Hero />
       <main>
         <WeOffer />
-          <Brands />
+        <Brands />
+        <FrequentlyQuestions />
       </main>
     </div>
   );

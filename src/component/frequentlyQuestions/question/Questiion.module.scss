@@ -1,0 +1,39 @@
+@import "src/scss/colors";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 896px;
+  background: $white;
+  padding: 32px 40px;
+  text-align: left;
+  flex: 1;
+  overflow-y: hidden;
+
+
+  &__textContainer {
+    flex: 0.85;
+  }
+
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &__description {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    color: $grey;
+    margin-top: 16px;
+  }
+
+  &__apear {
+    align-items: flex-start;
+  }
+
+}
+

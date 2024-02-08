@@ -14,7 +14,7 @@
   }
 
   &__title {
-   line-height: 36px;
+    line-height: 36px;
     font-weight: 600;
     font-size: 24px;
     color: $black;
@@ -22,13 +22,12 @@
   }
 
   &:hover {
-    &>* {
-    color: $white;
-  }
+    & > * {
+      color: $white;
+    }
     background: $orange;
     svg path {
       fill: $white;
     }
   }
-
 }

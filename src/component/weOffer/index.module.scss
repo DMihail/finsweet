@@ -1,11 +1,9 @@
 @import "src/scss/colors";
 
-
 .container {
   padding-top: 128px;
   padding-bottom: 128px;
   background: $light-grey;
-
 
   &__content {
     max-width: 1288px;
@@ -30,13 +28,12 @@
     margin-bottom: 64px;
   }
 
-
   &__services {
     display: grid;
     gap: 8px;
     grid-column: 4;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns:  repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 0 auto 32px;
   }
 
@@ -52,5 +49,4 @@
     display: flex;
     align-items: center;
   }
-
 }
