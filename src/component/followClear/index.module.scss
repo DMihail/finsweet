@@ -1,0 +1,27 @@
+@import "src/scss/colors";
+@import "src/scss/mixins";
+
+.container {
+  max-width: 1288px;
+  margin: 0 auto;
+  padding-top: 134px;
+  padding-bottom: 134px;
+  display: grid;
+  gap: 131px;
+  grid-template-columns: 524px 432px 1fr;
+
+  &__processes {
+    display: grid;
+    gap: 16px;
+  }
+
+  &__subtitle {
+    color: $grey;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  button {
+    @include button;
+  }
+}
