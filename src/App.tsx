@@ -5,6 +5,7 @@ import WeOffer from "./component/weOffer";
 import Brands from "./component/brands";
 import FrequentlyQuestions from "./component/frequentlyQuestions";
 import FollowClear from "./component/followClear";
+import OurBlog from "./component/ourBlog";
 
 function App() {
   return (
@@ -12,9 +13,9 @@ function App() {
       <Hero />
       <main>
         <WeOffer />
-          <FollowClear />
+        <FollowClear />
         <Brands />
-
+        <OurBlog />
         <FrequentlyQuestions />
       </main>
     </div>

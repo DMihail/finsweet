@@ -15,8 +15,9 @@ const questions = [
   },
   {
     title: "What are the repair services provided?",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa dolore ea error, est fugiat hic incidunt iste maiores molestias nulla numquam, officia recusandae, repudiandae soluta tempora ullam veritatis! Totam."
-        },
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa dolore ea error, est fugiat hic incidunt iste maiores molestias nulla numquam, officia recusandae, repudiandae soluta tempora ullam veritatis! Totam.",
+  },
   {
     title: "How do I find auto body shops near me?",
     description:
@@ -32,7 +33,6 @@ const questions = [
 function FrequentlyQuestions() {
   return (
     <div className={styles.container}>
-
       <h2>Frequently Asked Questionse</h2>
       <div className={styles.container__questions}>
         {questions.map((item) => (

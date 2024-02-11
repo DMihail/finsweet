@@ -1,0 +1,25 @@
+@import "src/scss/colors";
+
+.container {
+  width: 405px;
+
+  img {
+    cursor: pointer;
+    height: 266px;
+    margin-bottom: 24px;
+  }
+
+  &__data {
+    font-weight: 600;
+    line-height: 28px;
+    color: $grey;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+}

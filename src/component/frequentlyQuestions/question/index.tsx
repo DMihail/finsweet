@@ -14,14 +14,16 @@ function FrequentlyQuestions({ title, description }: Props) {
     <div className={`${styles.container} ${open && styles.container__apear}`}>
       <div className={styles.container__textContainer}>
         <div className={styles.container__title}>{title}</div>
-          {open && <div className={styles.container__description}>{description}</div>}
+        {open && (
+          <div className={styles.container__description}>{description}</div>
+        )}
       </div>
 
-      <a type={'button'} onClick={() => setOpen(!open)}>{!open ? <Appear /> : <Disappear />}</a>
-
+      <a type={"button"} onClick={() => setOpen(!open)}>
+        {!open ? <Appear /> : <Disappear />}
+      </a>
     </div>
   );
 }
-
 
 export default FrequentlyQuestions;

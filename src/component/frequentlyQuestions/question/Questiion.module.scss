@@ -11,11 +11,9 @@
   flex: 1;
   overflow-y: hidden;
 
-
   &__textContainer {
     flex: 0.85;
   }
-
 
   &__title {
     font-weight: 600;
@@ -34,6 +32,4 @@
   &__apear {
     align-items: flex-start;
   }
-
 }
-

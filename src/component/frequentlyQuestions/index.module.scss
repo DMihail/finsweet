@@ -3,7 +3,7 @@
 .container {
   padding-top: 128px;
   padding-bottom: 128px;
-   background: $steelgrey;
+  background: $steelgrey;
 
   text-align: center;
   display: flex;
@@ -18,9 +18,10 @@
     margin-bottom: 86px;
   }
 
-  &__questions >* {
-  margin-bottom: 12px;
-  }:last-child {
-  margin-bottom: 0px;
-     }
+  &__questions > * {
+    margin-bottom: 12px;
+  }
+  :last-child {
+    margin-bottom: 0px;
+  }
 }
