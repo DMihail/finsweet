@@ -5,7 +5,7 @@ import AssistanceIcon from "../../assets/svg/AssistanceIcon.svg";
 import HeaderImage from "../../assets/images/Image.png";
 import Stars from "../../assets/svg/Stars.svg";
 
-const navs = ["Home", "About us", "Services", "Blog", "Contact"];
+export const navs = ["Home", "About us", "Services", "Blog", "Contact"];
 
 function Hero() {
   return (

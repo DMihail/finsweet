@@ -6,6 +6,7 @@ import Brands from "./component/brands";
 import FrequentlyQuestions from "./component/frequentlyQuestions";
 import FollowClear from "./component/followClear";
 import OurBlog from "./component/ourBlog";
+import Footer from "./component/footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <OurBlog />
         <FrequentlyQuestions />
       </main>
+      <Footer />
     </div>
   );
 }
