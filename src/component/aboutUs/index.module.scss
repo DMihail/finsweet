@@ -1,0 +1,60 @@
+@import "src/scss/colors";
+@import "src/scss/mixins";
+.container {
+  position: relative;
+  background: $light-grey;
+
+  &__imageContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 502px;
+    img {
+      max-width: 50%;
+      height: 100%;
+      background-size: cover;
+
+    }
+  }
+
+  &__contactUs {
+    width: 729px;
+    height: inherit;
+    background: $orange;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 80px;
+    position: absolute;
+    margin-left: 318px;
+  }
+
+  .button {
+    @include button;
+    background: $black;
+    margin-top: 48px;
+  }
+
+
+
+
+  &__advantages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    h2 {
+      color: $secondary;
+    }
+
+    span {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+  }
+}

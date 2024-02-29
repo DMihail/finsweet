@@ -7,6 +7,7 @@ import FrequentlyQuestions from "./component/frequentlyQuestions";
 import FollowClear from "./component/followClear";
 import OurBlog from "./component/ourBlog";
 import Footer from "./component/footer";
+import AboutUs from "./component/aboutUs";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <main>
         <WeOffer />
         <FollowClear />
+          <AboutUs />
         <Brands />
         <OurBlog />
         <FrequentlyQuestions />
